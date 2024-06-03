@@ -6,9 +6,9 @@ class Solution:
         while Top <= Bottom:
             mid = (Top+Bottom)//2
             if target > matrix[mid][-1]:
-                Top = Rows + 1 
+                Top = mid + 1 
             elif target < matrix[mid][0]:
-                Bottom = Rows - 1
+                Bottom = mid - 1
             else:
                 break
         
